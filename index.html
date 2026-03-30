@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow"> 
-    <title>Cartão Digital</title> 
+    <title>Cartão Digital - Alyne Alves</title> 
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -146,19 +146,19 @@
             nome: "Alyne Alves",
             cargo: "Gerência",
             
-            // E-mail (Coloquei um genérico, se tiver o correto pode alterar)
+            // E-mail
             email: "alyne.alves@exemplo.com.br", 
             
             // Link do LinkedIn
             linkedinPessoal: "https://www.linkedin.com/in/alynegestora/",
             
-            // Foto da Alyne
-            fotoUrl: "https://media.licdn.com/dms/image/v2/D4D03AQEcyIQzXYuNdA/profile-displayphoto-crop_800_800/B4DZkxjrcwJMAI-/0/1757473061351?e=1772064000&v=beta&t=SWqIjjsF4puQKkFA3nOoZPYm5mH5d5gM-k6y-D-N9VY", 
+            // FOTO ATUALIZADA: Link direto do Google Drive
+            fotoUrl: "https://lh3.googleusercontent.com/u/0/d/1DvegbVmdt7sgYRYBZ1Y7yErgkbBSEPj3=w800-h800-p", 
             
             // WhatsApp
             whatsapp: "5518981348888", 
             
-            // Instagram Pessoal (Substituindo o da empresa)
+            // Instagram Pessoal
             instagram: "https://www.instagram.com/alynesalves/", 
             
             // Link do Buscador
@@ -214,7 +214,6 @@
         });
 
         function gerarVcard() {
-            // Usa o LinkedIn Pessoal no vCard
             const socialLink = colaborador.linkedinPessoal || colaborador.instagram;
             
             const vcard = `BEGIN:VCARD\nVERSION:3.0\nFN:${colaborador.nome}\nTITLE:${colaborador.cargo}\nTEL;TYPE=CELL:${colaborador.whatsapp}\nEMAIL:${colaborador.email}\nURL:${socialLink}\nEND:VCARD`;
